@@ -1,0 +1,25 @@
+﻿# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# JavaScript
+node_modules/
+dist/
+
+# Generated local data
+data/
+artifacts/
+
+# Editor and OS files
+.vscode/
+.DS_Store
+
+
