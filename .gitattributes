@@ -1,0 +1,9 @@
+﻿# Store text files with LF line endings for Docker, Linux, CI, and GitHub.
+* text=auto eol=lf
+
+# Do not apply text conversion to binary files.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
