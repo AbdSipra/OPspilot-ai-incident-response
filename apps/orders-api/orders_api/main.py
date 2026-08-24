@@ -8,7 +8,9 @@ from pydantic import BaseModel, Field
 
 SERVICE_NAME = "orders-api"
 INVENTORY_BASE_URL = os.getenv("INVENTORY_BASE_URL", "http://127.0.0.1:8002")
-INVENTORY_TIMEOUT_SECONDS = 2.0
+INVENTORY_TIMEOUT_SECONDS = float(
+    os.getenv("INVENTORY_TIMEOUT_SECONDS", "1.0")
+)
 
 
 class HealthResponse(BaseModel):
