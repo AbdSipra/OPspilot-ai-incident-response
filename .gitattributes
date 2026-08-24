@@ -1,4 +1,4 @@
-﻿# Store text files with LF line endings for Docker, Linux, CI, and GitHub.
+# Store text files with LF line endings for Docker, Linux, CI, and GitHub.
 * text=auto eol=lf
 
 # Do not apply text conversion to binary files.
