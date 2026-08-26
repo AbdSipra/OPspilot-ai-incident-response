@@ -8,7 +8,9 @@ from pydantic import BaseModel, Field
 
 SERVICE_NAME = "edge-api"
 ORDERS_BASE_URL = os.getenv("ORDERS_BASE_URL", "http://127.0.0.1:8001")
-ORDERS_TIMEOUT_SECONDS = 2.0
+ORDERS_TIMEOUT_SECONDS = float(
+    os.getenv("ORDERS_TIMEOUT_SECONDS", "3.0")
+)
 
 
 class HealthResponse(BaseModel):
